@@ -42,4 +42,5 @@ app.use((err,req,res,next)=>{
 
 //server start
 const port=app.get('port') || 3000;
-app.listen(port, ()=> console.log(`server is listening on port ${port}`));
+app.listen(process.env.PORT || 3000);
+//app.listen(port, ()=> console.log(`server is listening on port ${port}`));
