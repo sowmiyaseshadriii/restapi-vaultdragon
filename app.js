@@ -4,7 +4,7 @@ const mongoose=require('mongoose');
 const bodyParser=require('body-parser');
 
 mongoose.Promise=global.Promise;
-mongoose.connect('mongodb://localhost/apiproject');
+mongoose.connect('mongodb://admin:123456@ds231360.mlab.com:31360/apiproject');
 
 const app=express();
 
